@@ -1,3 +1,27 @@
+body {
+    margin: 0;
+    background: darkgrey
+}
+
+.logo {
+    font-size: large;
+    margin-right: 1em;
+}
+
+.navbar {
+    padding-left: 2em;
+    margin: 0;
+    width: 100vw;
+}
+
+.home {
+    margin-top: 5em;
+}
+
+.post {
+    margin-top: 5em;
+}
+
 .post-link:hover {
     text-decoration: none;
 }
@@ -37,3 +61,6 @@
     margin-right: 1em;
 }
 
+.tips {
+    margin-top: 5em;
+}

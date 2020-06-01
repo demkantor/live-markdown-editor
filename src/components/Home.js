@@ -45,7 +45,7 @@ class Home extends Component {
     render() {
         console.log(this.state);
         return (
-            <div>
+            <div className="home">
                 <h1 className="mt-4 mb-4 text-center">Create or edit a post</h1>
                 <form onSubmit={this.submit}>
                     <div className="input-group mb-3">

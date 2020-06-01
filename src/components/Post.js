@@ -1,5 +1,4 @@
 import React, { Component, createRef } from 'react';
-import { Link } from 'react-router-dom';
 import db from '../firebase';
 import ReactMarkdown from 'react-markdown';
 
@@ -43,11 +42,8 @@ class Post extends Component {
 
     render() {
         return (
-            <>
+            <div className="post">
                 <div className="row">
-                    <div className="col col-sm-12">
-                        <Link to="/">Home</Link>
-                    </div>
                     <div className="col col-sm-12">
                         <input
                             className="post-title-input"
@@ -73,9 +69,10 @@ class Post extends Component {
                             className="markdown-preview"/>
                     </div>
                 </div>
-            </>
-        )
-    }
+            </div>
+        );
+    };
 };
+
 
 export default Post;
