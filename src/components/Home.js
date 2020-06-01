@@ -65,7 +65,10 @@ class Home extends Component {
                     {this.state.posts.map((post) => (
                         <div className="mt-4 mb-4" key={post.key}>
                             <Link to={`/post/${post.key}`}>
-                                <h2>{post.title}</h2>
+                                <span className="icon-wrap">
+                                    <i className="fab fa-markdown"></i>
+                                    <h2>{post.title}</h2>
+                                </span>
                                 <hr/>
                             </Link>
                         </div>
