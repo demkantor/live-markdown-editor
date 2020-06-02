@@ -31,6 +31,12 @@ class Post extends Component {
         });
     };
 
+    delete = () => {
+        this.postFBRef.remove()
+        .then(()=> this.props.history.push(`/`))
+        .catch(error => console.log(error));
+    };
+
     onChange = () => {
         this.postFBRef.set({
             title: this.titleRef.current.value,
@@ -45,6 +51,11 @@ class Post extends Component {
             <div className="post">
                 <div className="row">
                     <div className="col col-sm-12">
+                        <i 
+                            className="fas fa-times-circle float-right"
+                            onClick={this.delete}>
+                                delete
+                        </i>
                         <input
                             className="post-title-input"
                             ref={this.titleRef}

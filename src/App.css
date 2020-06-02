@@ -43,7 +43,7 @@ body {
     height: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid red;
+    border: 1px solid #7e2e2e;
 }
   
 .markdown-preview img {
@@ -63,4 +63,19 @@ body {
 
 .tips {
     margin-top: 5em;
+}
+
+.inline {
+    display: table-caption;
+}
+
+.fa-times-circle {
+    color: #b63939;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+
+.fa-times-circle:hover {
+    transform: scale(1.1);
+    transition: ease 300ms;
 }

@@ -43,7 +43,7 @@ class Home extends Component {
     };
 
     render() {
-        console.log(this.state);
+        // console.log(this.state);
         return (
             <div className="home">
                 <h1 className="mt-4 mb-4 text-center">Create or edit a post</h1>
