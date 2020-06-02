@@ -53,6 +53,39 @@ export class Tips extends Component {
                             </tr>
                         </tbody>
                     </table>
+                    <h2>--- Lists ---</h2>
+                    <p className="text-muted">
+                        Ordered lists start with a number then period then space for each new list item
+                        <br/>
+                        Unordered lists start with a * or a - or a +, all of these will look the same.
+                    </p>
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Unordered Lists</th>
+                                <th scope="col">Ordered Lists</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*   Red</td>
+                                <td>1. Red</td>
+                            </tr>
+                            <tr>
+                                <td>* Blue</td>
+                                <td>2. Blue</td>
+                            </tr>
+                            <tr>
+                                <td>*   Yellow</td>
+                                <td>3.  Yellow</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>--- Links ---</h2>
+                    <p className="text-muted">Inline links start with display text in [] square brackets</p>
+                    <p className="text-muted">followed but the link in () rounded brackets  </p>
+                    <p className="text-muted">optionally a title tag can be added</p>
+                    <code className="text-muted">This is [an example](http://example.com/ "Title") inline link.</code>
                 </div>
             </div>
         )
